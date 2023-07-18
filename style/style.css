@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, 'Trebuchet MS' ,sans-serif;
+}
+body{
+    background: #1C1C1C;
+}
+
+h1{
+    text-align: center;
+    color: #F7F7F7;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.container{
+    left: 50%;
+    margin: 0 0 0 -15.625rem;
+    position: absolute;
+    width: 31.25rem;
+    margin-top: 1rem;
+}
+
+.calendary{
+    text-align: center;
+}
+
+.container .calendary header{
+    position: relative;
+}
+
+h2{
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+
+.btn-ant, .btn-pro{
+    position: absolute;
+    top: 50%;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    margin-top: -1rem;
+    border: 2px solid #cbd1d2;
+    border-radius: 50%;
+    color: #F7F7F7;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-ant{
+    left: 5rem;
+}
+
+.btn-pro{
+    right: 5rem;
+}
+
+.btn-ant:hover, .btn-pro:hover{
+    background: #140298;
+   border: 3px solid #140298;
+   font-weight: bold;
+}
+
+.calendary table{
+    margin-top: 1.2rem;
+    border-collapse: collapse;
+}
+
+.calendary thead{
+    background: #242424;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-top: 2px solid #cbd1d2;
+    border-bottom: 2px solid #F7F7F7;
+}
+
+.calendary thead td{
+    height: 5rem;
+}
+
+.calendary thead td:first-child{
+    border-left: 2px solid #cbd1d2;
+}
+
+.calendary thead td:last-child{
+    border-right: 2px solid #cbd1d2;
+}
+
+.calendary td{
+    border: 2px solid #cbd1d2;
+    height: 4.5rem;
+    text-align: center;
+    width: 4.5rem;
+    color: #F7F7F7;;
+}
+
+.calendary tbody td{
+    cursor: pointer;   
+}
+
+.calendary tbody td:hover{
+    background: #707070;
+    color: #f9f9f9;
+}
+
+.calendary table .dayCurrent{
+    background: #0779BA;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.calendary .monthPrev, .calendary .monthNext{
+    color: #cbd1d2;
+}
+
+.calendary .monthPrev:hover, .calendary .monthNext:hover{
+    background-color: #707070;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.event{
+    position: relative;
+}
+
+.event::after{
+    content: '';
+    width: 0.438rem;
+    height: 0.438rem;
+    left: 50%;
+    bottom: 0.438rem;
+    margin: -0.219rem, 0, 0, -0.219rem;
+    background: #00addf;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.event:hover::after{
+    background: #f9f9f9;
+}
+
+.event .dayCurrent::after{
+    background: #f9f9f9;
+}
